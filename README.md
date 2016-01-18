@@ -1,2 +1,3 @@
-# ehrsix
-a very simple hr management system but with a good structure
+# ehrsix简易人事管理系统
+这是2015年6月做的一个JSP实训小项目
+通过ehrsix你可以进行简单的增删改查
