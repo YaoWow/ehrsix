@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ehrsix"
+  id="myeclipse.1439275895250"
+  context-root="/ehrsix"
+  j2ee-spec="5.0"
+  archive="ehrsix.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

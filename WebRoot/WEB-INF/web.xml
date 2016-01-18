@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+<filter>
+		<filter-name>LogFile</filter-name>
+		<filter-class>filter.LoginFilter</filter-class>
+</filter>	
+
+<filter-mapping>
+		<filter-name>LogFile</filter-name>
+		<url-pattern>/*</url-pattern>
+</filter-mapping>
+
+<session-config>
+<session-timeout>60</session-timeout>
+</session-config>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>action.LoginAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogoutAction</servlet-name>
+    <servlet-class>action.LogoutAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeptAction</servlet-name>
+    <servlet-class>action.DeptAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserAction</servlet-name>
+    <servlet-class>action.UserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EmployeeAction</servlet-name>
+    <servlet-class>action.EmployeeAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JobAction</servlet-name>
+    <servlet-class>action.JobAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ReportAction</servlet-name>
+    <servlet-class>action.ReportAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DimissionAction</servlet-name>
+    <servlet-class>action.DimissionAction</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LogoutAction</servlet-name>
+    <url-pattern>/LogoutAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/LoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeptAction</servlet-name>
+    <url-pattern>/DeptAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAction</servlet-name>
+    <url-pattern>/UserAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EmployeeAction</servlet-name>
+    <url-pattern>/EmployeeAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JobAction</servlet-name>
+    <url-pattern>/JobAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReportAction</servlet-name>
+    <url-pattern>/ReportAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DimissionAction</servlet-name>
+    <url-pattern>/DimissionAction</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
